@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <title>Paul Sheridan</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/skeleton.css">
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+    <script id="project-template" type="text/x-handlebars-template">
+      <article class="project">
+        <div id="project-text" class="{{textClass}}">
+          <h3 class="title">{{title}}</h3>
+          <p class="published">Published: <time>{{publishedDate}}</time></p>
+          <p class="description">{{{description}}}</p>
+        </div>
+        <img id="project-picture" src="{{imgURL}}" alt="">
+        <div id="project-buttons" class="twelve columns">
+          <a href="{{projectURL}}" class="button button-primary">Play It</a>
+          <a href="{{githubURL}}" class="button">View on Github</a>
+        </div>
+      </article>
+    </script>
+  </head>
+  <body>
+    <header class="header-content">
+      <nav class="nav-bar">
+        <ul>
+          <li class="tab" data-content="about-me"><a href="#about-me" class="">About Me</a></li>
+          <li class="tab" data-content="portfolio"><a href="#portfolio" class="">Portfolio</a></li>
+          <li class="tab" data-content="contact"><a href="#contact" class="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <banner class="intro-banner row">
+        <h1>Hi, I'm Paul.</h1>
+        <p>Maybe someday I'll think of something to put here.</p>
+      </banner>
+      <section id="about" class="tab-content">
+        <header>
+          Welcome to my Blog
+        </header>
+        <section>
+          <h1>Check out my Projects on GitHub:</h1>
+          <ul>
+            <li>Coding</li>
+          </ul>
+        </section>
+      <section class="portfolio row" id="portfolio">
+        <h3>My Work</h3>
+      </section>
+    </main>
+    <footer class="row">
+      <img id="footer-deco" src="styles/images/footer-deco.png" alt="">
+      <h2>Get at me</h2>
+      <ul class="contact" id="contact">
+        <li><a href="https://github.com/paulsheridan"><img src="styles/images/github.svg" alt=""></a></li>
+        <li><a href="https://twitter.com/borealisrex"><img src="styles/images/twitter.svg" alt=""></a></li>
+        <li><a href="https://www.linkedin.com/profile/view?id=AAMAAAaUkqMBGM8RAgL645A7TCIVeNPy2yDCLHA&trk=hp-identity-name"><img src="styles/images/linkedin.svg" alt=""></a></li>
+        <li><a href="mailto:paulsemail@me.com"><img src="styles/images/mail.svg" alt=""></a></li>
+      </ul>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+      <script src="/scripts/githubToken.js"></script>
+      <script src="scripts/app.js"></script>
+      <script src="scripts/viewManager.js"></script>
+      <script src="/scripts/aboutController.js"></script>
+      <script src="/scripts/repo.js"></script>
+      <script src="/scripts/repoView.js"></script>
+      <script src="scripts/invoke.js"></script>
+    </footer>
+  </body>
+</html>
